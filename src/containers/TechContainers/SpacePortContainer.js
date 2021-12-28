@@ -28,11 +28,10 @@ const SpacePortContainer = () => {
             </Tech.Div>
             <Tech.Article data-flex flexDirection="column">
                 <Tech.H2 fontSize="var(--fs-400)" data-font-family="sans-cond" data-uppercase data-text-accent>The terminology...</Tech.H2>
-                <Tech.Sub fontSize="var(--fs-700)" data-font-family="serif" data-uppercase>Launch vehicle</Tech.Sub>
-                <Tech.Para fontSize="var(--fs-400)" data-text-accent>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
-                    from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket
-                    is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight
-                    on the launch pad!</Tech.Para>
+                <Tech.Sub fontSize="var(--fs-700)" data-font-family="serif" data-uppercase>spaceport</Tech.Sub>
+                <Tech.Para fontSize="var(--fs-400)" data-text-accent>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                    by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally 
+                    situated to take advantage of the Earth’s rotation for launch.</Tech.Para>
             </Tech.Article>
         </Main>
      );
