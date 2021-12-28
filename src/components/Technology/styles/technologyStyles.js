@@ -87,7 +87,7 @@ export const Para = styled.p`
 `
 export const Image = styled.img`
     grid-area: image;
-    content: url(/assets/technology/image-launch-vehicle-landscape.jpg);
+    content: url(/assets/technology/${(props) => props.image}-landscape.jpg);
     justify-self: end;
 
     @media (max-width: 55rem) {
