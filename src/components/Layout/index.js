@@ -1,11 +1,12 @@
 import NavigationContainer from "../../containers/NavigationContainer";
 
 
-
 const Layout = ({children}) => {
+
+
     return ( 
         <>
-            <NavigationContainer />
+            <NavigationContainer/>
             {children}
         </>
      );

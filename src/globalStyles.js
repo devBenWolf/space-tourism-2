@@ -268,11 +268,60 @@ export const GlobalStyles = createGlobalStyle`
         border-color: hsl(var(--clr-white) / 0.5);
     }
 
-    [data-underline-indicators] > [data-active],
-    [data-underline-indicators] > [aria-selected="true"] {
+
+    .active {
         border-color: hsl(var(--clr-white) / 1);
-        color: hsl(var(--clr-white) / 1)
-    } 
+        color: hsl(var(--clr-white) / 1);
+    }
+
+    [data-tab-list] {
+        --gap: 2rem;
+    }
+
+    [data-dot-indicators] > * {
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+        padding: .5em;
+        background-color: hsl(var(--clr-white) / 0.25);
+    }
+
+    [data-dot-indicators] > *:hover,
+    [data-dot-indicators] > *:focus {
+        background-color: hsl(var(--clr-white) /0.5);
+    }
+
+    [data-dot-indicators] > [aria-selected="true"] {
+        background-color: hsl(var(--clr-white) / 1)
+    }
+
+    .active-dot {
+        background-color: hsl(var(--clr-white) / 1)
+    }
+
+
+
+    [data-large-button-link] {
+        text-decoration: none;
+        font-size: var(--fs-600);
+    }
+
+    [data-circle-indicators] > * {
+        cursor: pointer;
+        background-color: transparent;
+        color: hsl(var(--clr-white));
+        border-color: hsl(var(--clr-white) / 0.5);
+    }
+
+    [data-circle-indicators] > *:hover,
+    [data-circle-indicators] > *:focus {
+        border: 2px solid white;   
+    }
+
+    .active-circle {
+        background-color: white;
+        color: black;
+    }
 
     
 
@@ -386,50 +435,6 @@ export const GlobalStyles = createGlobalStyle`
         margin-right: 1rem;
     }
 
-
-    // ****** tabs ******
-    [data-tab-list] {
-        --gap: 2rem;
-    }
-
-    [data-dot-indicators] > * {
-        cursor: pointer;
-        border: 0;
-        border-radius: 50%;
-        padding: .5em;
-        background-color: hsl(var(--clr-white) / 0.25);
-    }
-
-    [data-dot-indicators] > *:hover,
-    [data-dot-indicators] > *:focus {
-        background-color: hsl(var(--clr-white) /0.5);
-    }
-
-    [data-dot-indicators] > [aria-selected="true"] {
-        background-color: hsl(var(--clr-white) / 1)
-    }
-
-    [data-large-button-link] {
-        text-decoration: none;
-        font-size: var(--fs-600);
-    }
-
-    [data-circle-indicators] > * {
-        cursor: pointer;
-        background-color: transparent;
-        color: hsl(var(--clr-white));
-        border-color: hsl(var(--clr-white) / 0.5);
-    }
-
-    [data-circle-indicators] > *:hover,
-    [data-circle-indicators] > *:focus {
-        border: 2px solid white;   
-    }
-
-    [data-circle-indicators] > [aria-selected="true"] {
-        background-color: white;
-        color: black;
-    }
 
 
 // ************************** //

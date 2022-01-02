@@ -1,11 +1,19 @@
-import {useState} from "react"
-import { Link } from "react-router-dom"
+import {useState, useEffect} from "react"
+import { Link, useLocation } from "react-router-dom"
 import Navigation from "../components/Navigation";
 import { Header } from "../components/Navigation/styles/navigationStyles";
 
 
+
 const NavigationContainer = () => {
-    const [isVisible, setIsvisible] = useState(false)
+    const [isVisible, setIsVisible] = useState(false)
+    console.log(isVisible)
+
+    const {pathname} = useLocation()
+
+
+
+
 
     return (
         <>
@@ -19,7 +27,7 @@ const NavigationContainer = () => {
             <Navigation.MenuButton
                 className={`mobile-nav-toggle ${isVisible ? "close-nav-icon" : "hamburger-icon"}`}
                 aria-controls="navigation"
-                onClick={() => setIsvisible(!isVisible)} 
+                onClick={() => setIsVisible(!isVisible)} 
                 style={{ height: "1.5rem"}}             
             >
                 <Navigation.Span
@@ -27,27 +35,28 @@ const NavigationContainer = () => {
                     aria-expanded="false"
                 >Menu</Navigation.Span>
             </Navigation.MenuButton>
+
             <Navigation.Navbar>
                 <Navigation.List data-flex data-primary-navigation data-underline-indicators className={`${isVisible ? "visible-nav": "invisible-nav"}`}>
-                    <Navigation.ListItem data-active>
+                    <Navigation.ListItem className={pathname === "/" ? "active" : ""}>
                         <Link to="/" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">00 </Navigation.Span>
                             Home
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem>
+                    <Navigation.ListItem className={pathname === "/moon" ? "active" : ""}>
                         <Link to="/moon" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">01 </Navigation.Span>
                             Destination
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem>
+                    <Navigation.ListItem className={pathname === "/commander" ? "active" : ""}>
                         <Link to="/commander" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">02 </Navigation.Span>
                             Crew
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem>
+                    <Navigation.ListItem className={pathname === "/vehicle" ? "active" : ""}>
                         <Link to="/vehicle" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">03 </Navigation.Span>
                             Technology
@@ -60,4 +69,4 @@ const NavigationContainer = () => {
      );
 }
  
-export default NavigationContainer;
+export default NavigationContainer

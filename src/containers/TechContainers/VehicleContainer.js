@@ -1,10 +1,14 @@
+
 import Tech from "../../components/Technology";
 import { Main } from "../../components/Technology/styles/technologyStyles";
 import CircleTabsContainer from "../CircleTabsContainer";
 
 
 
+
 const VehicleContainer = () => {
+
+
     return ( 
         <Main data-flow="3" style={{minHeight: "100vh"}}>
              <Tech.H1
