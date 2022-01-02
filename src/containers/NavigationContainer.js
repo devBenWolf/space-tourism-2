@@ -35,25 +35,25 @@ const NavigationContainer = () => {
 
             <Navigation.Navbar>
                 <Navigation.List data-flex data-primary-navigation data-underline-indicators className={`${isVisible ? "visible-nav": "invisible-nav"}`}>
-                    <Navigation.ListItem className={pathname === "/" ? "active" : ""}>
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={pathname === "/" ? "active" : ""}>
                         <Link to="/" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">00 </Navigation.Span>
                             Home
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem className={["/moon", "/mars", "/europa", "/titan"].includes(pathname) ? "active" : ""}>
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/moon", "/mars", "/europa", "/titan"].includes(pathname) ? "active" : ""}>
                         <Link to="/moon" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">01 </Navigation.Span>
                             Destination
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem className={["/commander", "/specialist", "/pilot", "/engineer"].includes(pathname) ? "active" : ""}>
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/commander", "/specialist", "/pilot", "/engineer"].includes(pathname) ? "active" : ""}>
                         <Link to="/commander" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">02 </Navigation.Span>
                             Crew
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem className={["/vehicle", "/spaceport", "/capsule"].includes(pathname) ? "active" : ""}>
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/vehicle", "/spaceport", "/capsule"].includes(pathname) ? "active" : ""}>
                         <Link to="/vehicle" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">03 </Navigation.Span>
                             Technology
