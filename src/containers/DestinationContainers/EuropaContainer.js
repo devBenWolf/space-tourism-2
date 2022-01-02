@@ -20,7 +20,7 @@ const EuropaContainer = () => {
                     fontWeight="700" 
                     margin="0 1rem 0 0" 
                     textColor="hsl(var(--clr-white) / 0.3)"
-                >01 </Destination.Span>Pick your destination</Destination.H1>
+                >01 </Destination.Span>Choose your destination</Destination.H1>
                 <Destination.Image src={`./assets/destination/image-europa.png`} alt="europa" data-destination-image />
                 
                 <TabNavContainer />

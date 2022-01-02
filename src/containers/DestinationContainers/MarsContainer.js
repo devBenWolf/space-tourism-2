@@ -20,7 +20,7 @@ const MarsContainer = () => {
                     fontWeight="700" 
                     margin="0 1rem 0 0" 
                     textColor="hsl(var(--clr-white) / 0.3)"
-                >01 </Destination.Span>Pick your destination</Destination.H1>
+                >01 </Destination.Span>Choose your destination</Destination.H1>
                 <Destination.Image src={`./assets/destination/image-mars.png`} alt="mars" data-destination-image />
                 <TabNavContainer />
                 <Destination.Article data-destination-content>
