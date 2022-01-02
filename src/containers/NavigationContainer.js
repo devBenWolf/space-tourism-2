@@ -19,7 +19,7 @@ const NavigationContainer = () => {
         </Navigation.Div>
         <Header data-flex data-primary-header>
             <Navigation.Div>
-                <Navigation.Img src="./assets/shared/logo.svg" alt="space tourism logo" data-logo />
+                <Navigation.Img src="/assets/shared/logo.svg" alt="space tourism logo" data-logo />
             </Navigation.Div>
             <Navigation.MenuButton
                 className={`mobile-nav-toggle ${isVisible ? "close-nav-icon" : "hamburger-icon"}`}
@@ -41,20 +41,20 @@ const NavigationContainer = () => {
                             Home
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/moon", "/mars", "/europa", "/titan"].includes(pathname) ? "active" : ""}>
-                        <Link to="/moon" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/destination/moon", "/destination/mars", "/destination/europa", "/destination/titan"].includes(pathname) ? "active" : ""}>
+                        <Link to="/destination/moon" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">01 </Navigation.Span>
                             Destination
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/commander", "/specialist", "/pilot", "/engineer"].includes(pathname) ? "active" : ""}>
-                        <Link to="/commander" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/crew/commander", "/crew/specialist", "/crew/pilot", "/crew/engineer"].includes(pathname) ? "active" : ""}>
+                        <Link to="/crew/commander" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">02 </Navigation.Span>
                             Crew
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/vehicle", "/spaceport", "/capsule"].includes(pathname) ? "active" : ""}>
-                        <Link to="/vehicle" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
+                    <Navigation.ListItem onClick={() => setIsVisible(false)} className={["/technology/vehicle", "/technology/spaceport", "/technology/capsule"].includes(pathname) ? "active" : ""}>
+                        <Link to="/technology/vehicle" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">03 </Navigation.Span>
                             Technology
                         </Link>

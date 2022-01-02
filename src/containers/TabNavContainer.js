@@ -14,37 +14,37 @@ const TabNavContainer = () => {
         data-destination-tabs
         >
             <TabNav.Button 
-                className ={pathname === "/moon" ? "active" : ""}
+                className ={pathname === "/destination/moon" ? "active" : ""}
                 data-uppercase 
                 data-font-family="sans-cond" 
                 data-bg-dark
                 data-letter-space="2"
-                ><Link data-no-underline data-text-accent to="/moon">Moon</Link></TabNav.Button>
+                ><Link data-no-underline data-text-accent to="/destination/moon">Moon</Link></TabNav.Button>
             <TabNav.Button
-                className = {pathname === "/mars" ? "active": ""}
+                className = {pathname === "/destination/mars" ? "active": ""}
                 data-uppercase 
                 data-font-family="sans-cond" 
                 data-text-accent
                 data-bg-dark
                 data-letter-space="2"
-                ><Link data-no-underline data-text-accent to="/mars">Mars</Link></TabNav.Button>
+                ><Link data-no-underline data-text-accent to="/destination/mars">Mars</Link></TabNav.Button>
             <TabNav.Button
-                className = {pathname === "/europa" ? "active": ""}
+                className = {pathname === "/destination/europa" ? "active": ""}
                 data-uppercase 
                 data-font-family="sans-cond"
                 data-text-accent
                 data-bg-dark
                 data-letter-space="2"
-                ><Link data-no-underline data-text-accent to="/europa">Europa</Link>
+                ><Link data-no-underline data-text-accent to="/destination/europa">Europa</Link>
             </TabNav.Button>
             <TabNav.Button
-                className = {pathname === "/titan" ? "active": ""}
+                className = {pathname === "/destination/titan" ? "active": ""}
                 data-uppercase 
                 data-font-family="sans-cond"
                 data-text-accent
                 data-bg-dark
                 data-letter-space="2"
-                ><Link data-no-underline data-text-accent to="/titan">Titan</Link>
+                ><Link data-no-underline data-text-accent to="/destination/titan">Titan</Link>
             </TabNav.Button>
             <Outlet />
     </Main>

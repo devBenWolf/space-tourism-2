@@ -8,9 +8,9 @@ const CircleTabsContainer = () => {
 
     return ( 
         <>
-            <CircleTabs.Button  className={pathname === "/vehicle" ? "active-circle": ""} onClick={() => navigate("/vehicle")}>1</CircleTabs.Button>
-            <CircleTabs.Button className={pathname === "/spaceport" ? "active-circle": ""} onClick={() => navigate("/spaceport")}>2</CircleTabs.Button>
-            <CircleTabs.Button className={pathname === "/capsule" ? "active-circle": ""} onClick={() => navigate("/capsule")}>3</CircleTabs.Button>
+            <CircleTabs.Button  className={pathname === "/technology/vehicle" ? "active-circle": ""} onClick={() => navigate("/technology/vehicle")}>1</CircleTabs.Button>
+            <CircleTabs.Button className={pathname === "/technology/spaceport" ? "active-circle": ""} onClick={() => navigate("/technology/spaceport")}>2</CircleTabs.Button>
+            <CircleTabs.Button className={pathname === "/technology/capsule" ? "active-circle": ""} onClick={() => navigate("/technology/capsule")}>3</CircleTabs.Button>
             <Outlet />
         </>
      );

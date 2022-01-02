@@ -22,19 +22,18 @@ function App() {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<HomeContainer />} />
-            <Route path="moon" element={<DestinationContainer />} />
-            <Route path="mars" element={<MarsContainer />} />
-            <Route path="europa" element={<EuropaContainer />} />
-            <Route path="mars" element={<MarsContainer />} />
-            <Route path="titan" element={<TitanContainer />} />
-            <Route path="commander" element={<CrewContainer />} />
-            <Route path="specialist" element={<SpecialistContainer />} />
-            <Route path="pilot" element={<PilotContainer />} />
-            <Route path="engineer" element={<EngineerContainer />} />
-            <Route path="vehicle" element={<VehicleContainer />} />
-            <Route path="spaceport" element={<SpacePortContainer />} />
-            <Route path="capsule" element={<CapsuleContainer />} />
+            <Route path="/"                     element={<HomeContainer />} />
+            <Route path="/destination/moon"     element={<DestinationContainer />} />
+            <Route path="/destination/mars"     element={<MarsContainer />} />
+            <Route path="/destination/europa"   element={<EuropaContainer />} />
+            <Route path="/destination/titan"    element={<TitanContainer />} />
+            <Route path="/crew/commander"       element={<CrewContainer />} />
+            <Route path="/crew/specialist"      element={<SpecialistContainer />} />
+            <Route path="/crew/pilot"           element={<PilotContainer />} />
+            <Route path="/crew/engineer"        element={<EngineerContainer />} />
+            <Route path="/technology/vehicle"   element={<VehicleContainer />} />
+            <Route path="/technology/spaceport" element={<SpacePortContainer />} />
+            <Route path="/technology/capsule"   element={<CapsuleContainer />} />
           </Routes>
         </Layout>
       </Router>     
