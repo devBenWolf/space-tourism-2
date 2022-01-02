@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import { Link, useLocation } from "react-router-dom"
 import Navigation from "../components/Navigation";
 import { Header } from "../components/Navigation/styles/navigationStyles";
@@ -10,9 +10,6 @@ const NavigationContainer = () => {
     console.log(isVisible)
 
     const {pathname} = useLocation()
-
-
-
 
 
     return (
@@ -44,19 +41,19 @@ const NavigationContainer = () => {
                             Home
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem className={pathname === "/moon" ? "active" : ""}>
+                    <Navigation.ListItem className={["/moon", "/mars", "/europa", "/titan"].includes(pathname) ? "active" : ""}>
                         <Link to="/moon" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">01 </Navigation.Span>
                             Destination
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem className={pathname === "/commander" ? "active" : ""}>
+                    <Navigation.ListItem className={["/commander", "/specialist", "/pilot", "/engineer"].includes(pathname) ? "active" : ""}>
                         <Link to="/commander" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">02 </Navigation.Span>
                             Crew
                         </Link>
                     </Navigation.ListItem>
-                    <Navigation.ListItem className={pathname === "/vehicle" ? "active" : ""}>
+                    <Navigation.ListItem className={["/vehicle", "/spaceport", "/capsule"].includes(pathname) ? "active" : ""}>
                         <Link to="/vehicle" data-font-family="sans-cond" data-uppercase data-text-white data-letter-space="2">
                             <Navigation.Span aria-hidden="true">03 </Navigation.Span>
                             Technology

@@ -1,47 +1,10 @@
-import {useState, useEffect} from "react"
 import TabNav from "../components/TabNav";
 import { Main } from "../components/TabNav/styles/tabnavStyles";
 import {Link, Outlet, useLocation} from "react-router-dom"
 
 const TabNavContainer = () => {
-    const [moonHighlight, setMoonHighlight] = useState(null)
-    const [marsHighlight, setMarsHighlight] = useState(false)
-    const [europaHighlight, setEuropaHighlight] = useState(false)
-    const [titanHighlight, setTitanHighlight] = useState(false)
 
-    let {pathname} = useLocation() 
-
-
-    const handleMoon = () => {
-        setMoonHighlight(true)
-        setMarsHighlight(false)
-        setEuropaHighlight(false)
-        setTitanHighlight(false)
-        console.log(moonHighlight)
-    }
-    const handleMars = () => {
-        setMoonHighlight(false)
-        setMarsHighlight(true)
-        setEuropaHighlight(false)
-        setTitanHighlight(false)
-    }
-    const handleEuropa = () => {
-        setMoonHighlight(false)
-        setMarsHighlight(false)
-        setEuropaHighlight(true)
-        setTitanHighlight(false)
-    }
-    const handleTitan = () => {
-        setMoonHighlight(false)
-        setMarsHighlight(false)
-        setEuropaHighlight(false)
-        setTitanHighlight(true)
-    }
-
-    useEffect(() => {
-        console.log(moonHighlight, marsHighlight, europaHighlight, titanHighlight)
-
-    }, [moonHighlight, marsHighlight, europaHighlight, titanHighlight])
+    let {pathname} = useLocation()
 
     return ( 
         <Main

@@ -20,7 +20,6 @@ function App() {
     <>
       <GlobalStyles />
       <Router>
-
         <Layout>
           <Routes>
             <Route path="/" element={<HomeContainer />} />
