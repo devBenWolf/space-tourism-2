@@ -6,7 +6,7 @@ const HomeContainer = () => {
     return ( 
         <>
             <Main data-grid-container data-grid-container--home style={{minHeight: "100vh"}}>
-                <Home.Div style={{marginTop: "6rem"}}>
+                <Home.Div style={{marginTop: "14rem"}}>
                     <Home.H1 
                         fontSize="var(--fs-500)"
                         data-text-accent
