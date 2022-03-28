@@ -133,7 +133,7 @@ export const GlobalStyles = createGlobalStyle`
     input,
     button,
     textarea {
-        font-inherit
+        font-inherit;
     }
 
 
@@ -372,7 +372,7 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         .invisible-nav {
-            transform: translatex(100%);
+            transform: translateX(100%);
             transition: 250ms ease-in-out;
         }
     }

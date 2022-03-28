@@ -15,7 +15,8 @@ export const Main = styled.main`
         background-size: cover;
     }
 `
-export const Div = styled.div``
+export const Div = styled.div`
+`
 export const Span = styled.span`
     font-size: ${(props) => props.fontSize};  
     display: ${(props) => props.display}; 

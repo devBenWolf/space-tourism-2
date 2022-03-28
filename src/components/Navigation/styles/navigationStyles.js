@@ -35,7 +35,7 @@ export const Div = styled.div`
     }
 `
 export const Navbar = styled.nav`
-order: 2;
+    order: 2;
 `
 
 export const Link = styled.a`
