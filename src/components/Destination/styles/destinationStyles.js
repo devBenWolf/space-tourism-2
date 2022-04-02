@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const Main = styled.main`
 
-
     background-image: url(/assets/destination/background-destination-mobile.jpg);
     background-size: cover;
 
