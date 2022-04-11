@@ -351,7 +351,7 @@ export const GlobalStyles = createGlobalStyle`
             background: transparent;
             border: 0;
             width: 1.5rem;
-            apect-ratio: 1;
+            aspect-ratio: 1;
             background-size: cover;
             margin-top: 3rem;
             background-size: cover;
