@@ -14,9 +14,6 @@ const NavigationContainer = () => {
 
     return (
         <>
-        <Navigation.Div data-flex position="absolute" right="50%">
-            <Navigation.Link href="#" fontSize="2rem" data-text-dark data-bg-white>Skip to content</Navigation.Link>
-        </Navigation.Div>
         <Header data-flex data-primary-header>
             <Navigation.Div>
                 <Navigation.Img src="/assets/shared/logo.svg" alt="space tourism logo" data-logo />
