@@ -38,7 +38,7 @@ const HomeContainer = () => {
                         data-bg-white
                     >
                         <Link 
-                        to="#" 
+                        to="/destination/moon" 
                         data-text-dark
                         data-large-button-link
                         data-font-family="serif" 
