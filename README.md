@@ -1,3 +1,9 @@
+# Space Tourism Site
+
+## Figma files and assets for this project are provided at https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
+
+## To see this site deployed, visit https://space-tourism-2.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
