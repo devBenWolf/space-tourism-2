@@ -1,4 +1,5 @@
 # Space Tourism Site
+CSS heavy, relies on react-router for navigation.
 
 ## Figma files and assets for this project are provided at https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
 
