@@ -60,7 +60,7 @@ export const GlobalStyles = createGlobalStyle`
     // Resets          //
     // *************** //
 
-    https://piccalil.li/blog/a-modern-css-reset
+    //https://piccalil.li/blog/a-modern-css-reset
 
     *,
     *::before,
