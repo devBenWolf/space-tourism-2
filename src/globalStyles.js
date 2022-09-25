@@ -376,7 +376,7 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
 
-    [data-primary-navigation].[data-underline-indicators] > [data-active] {
+    [data-primary-navigation][data-underline-indicators] > [data-active] {
         border: 0;
     }
 
